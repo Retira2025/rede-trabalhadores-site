@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/Logo Imigrantes - VETOR.svg'
 
 const Navbar: React.FC = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null)

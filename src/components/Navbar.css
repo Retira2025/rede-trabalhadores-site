@@ -1,72 +1,78 @@
-/* === Structure Principale === */
+/* === STRUCTURE PRINCIPALE === */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: transparent; /* Transparent pour fond visible */
-  backdrop-filter: blur(8px); /* effet flouté élégant */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* ligne subtile de séparation */
-  padding: 1rem 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.75rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 50;
+  z-index: 100;
   box-sizing: border-box;
+  transition: background 0.3s ease-in-out;
 }
 
-/* === Logo === */
+/* === LOGO === */
 .logo-container {
-  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
 }
 
 .logo {
-  height: 48px;
+  height: 46px;
   object-fit: contain;
 }
 
-/* === Menu === */
+/* === LIENS PRINCIPAUX === */
 .nav-link {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: #213547;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  transition: color 0.3s ease;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: color 0.3s ease, background 0.3s ease;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
 }
 
 .nav-link:hover {
   color: #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
 }
 
-/* === Dropdown === */
+/* === ELEMENT DE MENU === */
+.nav-item {
+  position: relative;
+}
+
+/* === DROPDOWN === */
 .dropdown {
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #ffffff;
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  min-width: 180px;
-  display: none;
-  flex-direction: column;
-  padding: 0.5rem 0;
-  z-index: 100;
-}
-
-.nav-item:hover .dropdown {
+  min-width: 160px;
   display: flex;
+  flex-direction: column;
+  padding: 0.4rem 0;
+  z-index: 150;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .dropdown a {
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   color: #213547;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
@@ -75,86 +81,45 @@
   color: #007bff;
 }
 
-/* === Hamburger === */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-  margin-left: auto;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #213547;
-  border-radius: 2px;
-}
-
-/* === Version Mobile === */
+/* === VERSION MOBILE === */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem;
-    position: relative; /* pour que navbar-menu en absolute soit relatif à navbar */
+    padding: 0.5rem 1rem;
+    gap: 0.25rem;
   }
 
-  .hamburger {
-    display: flex;
-    margin-left: auto; /* pousse hamburger à droite */
-  }
-
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    align-items: flex-end; /* aligner contenu à droite */
-    margin-top: 1rem;
-    width: auto; /* ne prend pas toute la largeur */
-    position: absolute; /* positionné par rapport à navbar */
-    top: 60px; /* juste en dessous de la navbar */
-    right: 1rem; /* aligné à droite */
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 1rem;
-    z-index: 100;
-  }
-
-  .navbar-menu.active {
-    display: flex;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-
-  .nav-item {
-    width: auto;
-    margin: 0.25rem 0;
+  .logo {
+    height: 38px;
+    margin-bottom: 0.3rem;
   }
 
   .nav-link {
-    width: auto;
-    padding: 0.5rem 1rem;
-    text-align: right; /* texte aligné à droite */
+    font-size: 0.85rem; /* pi piti tèks */
+    padding: 0.3rem 0;
   }
 
   .dropdown {
     position: static;
-    background: #f9f9f9;
     box-shadow: none;
     border-radius: 4px;
-    margin-top: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 0.5rem;
+    width: 90%;
   }
 
-  .dropdown a {
-    padding: 0.5rem 1rem;
+  /* Evite navbar la pouse paj la desann */
+  body {
+    padding-top: 65px;
   }
 }
 
-/* === Animation Mobile === */
+/* === Animation aparisyon dropdown === */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translateY(-6px);
   }
   to {
     opacity: 1;

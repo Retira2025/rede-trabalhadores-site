@@ -17,24 +17,24 @@ const Missao: React.FC = () => {
         <div className="missao-text">
           <h2>Quem Somos</h2>
           <p>
-            A Rede dos Trabalhadores Imigrantes, Refugiados e Apátridas é uma associação civil de caráter privado, sem fins lucrativos, que nasce do compromisso ético com a dignidade humana, a justiça social e a defesa dos direitos das populações em situação v. Formalmente constituidída conforme os princípios legais vigentes, a entidade tem por finalidade promover ações de acolhimento de sua autonomia cidadania e inserção social.
+            A Rede dos Trabalhadores Imigrantes, Refugiados e Apátridas é uma associação civil de caráter privado, formada por imigrantes Refugiados e apatridas, sem fins lucrativos, que nasce do compromisso ético com a dignidade humana, a justiça social e a defesa dos direitos das populações em situação vulneravél. <br/><br/> Formalmente constituidída conforme os princípios legais vigentes, a entidade tem por finalidade promover ações de acolhimento de sua autonomia cidadania e inserção social.
             
-            A rede atua com base em princípios de solidariedade, inclusão, pluralidade e respeito à diversidade. Seu caráter é expressamente filantrópico, assistencial, educacional, promocional e recreativo, sendo completamente desvinculada de ideologias político-partidárias crenças religiosas ou interesses econômicos. Compreendemos que o processo migratório envolve inúmeros desafios — desde a regularização documental até a superação de barreiras linguísticas, culturais e institucionais —, e é nesse contexto que a Rede se posicionar como uma plataforma de apoio, representação e articulação coletiva.
+            A rede atua com base em princípios de solidariedade, inclusão, pluralidade e respeito à diversidade. Seu caráter é expressamente filantrópico, assistencial, educacional, promocional e recreativo, sendo completamente desvinculada de ideologias político-partidárias crenças religiosas ou interesses econômicos. Compreendemos que o processo migratório envolve inúmeros desafios — desde a regularização documental até a superação de barreiras linguísticas, culturais e institucionais —, e é nesse contexto que a Rede se posicionar como uma plataforma de apoio, representação e articulação coletiva. <br/><br/>
             
             Nossas ações incluem a orientação jurídica e instutucional, o apoio na emissão de documentos, o encaminhamento para serviços públicos e redes de proteção, bem como a realização de oficinas, cursos eventos e projetos voltados à qualificação profissional, ao fortalecimento comunitário e à defesa de direitos. Atuamos também no campo da formação política e educacional, estimulando a participação ativa das populações migrantes na vida pública, social e cultural do país.
             
-            Mais do que uma organização, somos um espaço de escuta, acolhimento e construção coletiva, formado por migrantes para migrantes. Acreditamos que a transformação social passa pela união das vozes que historicamente foram silenciadas. Assim, seguimos firmes no propósito de construir uma sociedade mais justa, equitativa e comprometida com a dignidade de todas as pessoas, independentemente de sua origem ou nacionalidade.
+            Mais do que uma organização, somos um espaço de escuta, acolhimento e construção coletiva, formado por migrantes para migrantes. Acreditamos que a transformação social passa pela união das vozes que historicamente foram silenciadas. <br/><br/> Assim, seguimos firmes no propósito de construir uma sociedade mais justa, equitativa e comprometida com a dignidade de todas as pessoas, independentemente de sua origem ou nacionalidade.
           </p>
           <h2> Nossa Missão </h2>
           <p>
-            Somos uma rede comprometida com a justiça social e a valorização do trabalho digno,
+            Somos uma ONG comprometida com a justiça social e a valorização do trabalho digno,
             atuando junto a imigrantes e apátridas em situação de vulnerabilidade. 
             Nossa missão é construir pontes entre diferentes realidades, garantindo acesso a direitos
             e oportunidades de desenvolvimento pessoal, profissional e comunitário.
           </p>
           <p>
-            Atuamos em diversas frentes: acolhimento, orientação jurídica, integração sociocultural, 
-            qualificação profissional e mobilização social.
+            Atuamos em diversas frentes: acolhimento, orientação jurídica, integração sociocultural, proteção do meio ambiente, reinserção Social,
+            interculturalidade, preparação para inserir no mercado de trabalho, e mobilização social.
           </p>
         </div>
         <div className="missao-image">

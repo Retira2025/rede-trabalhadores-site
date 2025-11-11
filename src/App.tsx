@@ -40,6 +40,7 @@ const App: React.FC = () => {
           <Route path="/online" element={<Online />} />
           <Route path="/presenciais" element={<Presenciais />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="*" element={<Inicio />} />
         </Routes>
       </main>
 
